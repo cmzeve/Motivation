@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+
+        <ImageView
+            android:id="@+id/imageInfinito"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_infinito"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/imageFeliz"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_feliz"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/imageSol"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_sol"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="Hello World!"/>
+
+    <TextView
+        android:id="@+id/textFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="32dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_margin="16dp"
+        android:textAlignment="center"
+        android:text="Frase"/>
+
+    <View
+        android:layout_width="120dp"
+        android:layout_below="@id/textFrase"
+        android:layout_height="3dp"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/buttonNovaFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nova frase"
+        android:background="@drawable/teste_ripple"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
